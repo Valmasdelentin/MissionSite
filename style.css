@@ -24,7 +24,6 @@ header
 		float:right;
 		margin-right:200px;
 		margin-top:45px;
-
 	}
 
 ul#menu_horizontal li 
@@ -37,4 +36,39 @@ ul#menu_horizontal
 	{
 		list-style-type : none; /* Car sinon les puces se placent n'importe où */
 	}
- 
+
+ul#menu_horizontal li a
+	{
+	 	color: gray;
+	}
+
+.enfant
+	{
+		margin:auto;
+		height:424px;
+		border-top: 6px solid black;
+		border-bottom: 6px solid black;
+		background-image:url(img/bébé.jpg);
+		background-repeat:no-repeat;
+		background-position: center;
+	}
+
+#fleche
+	{
+		right: 15px;
+		bottom: 50%;
+		width:50px;
+	    height:50px;
+	    position:absolute;
+	}
+
+#floche
+	{
+		left:15px;
+		width:50px;
+	    height:50px;
+	    position:absolute;
+	    transform: rotate(180deg);
+	    bottom: 50%;
+
+	}
