@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Webagency</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-	<header>
-		<img src="img/logo.png" id="logo" alt="">
-		<ul id="menu_horizontal">
-			<li><a href="accueil.php">Accueil</a></li>
-			<li><a href="services.php">Service</a></li>
-			<li><a href="portfolio.php">Portfolio</a></li>
-			<li><a href="contact.php">Contact</a></li>
-		</ul>
-	</header>
-	<div class="enfant">
-		<img src="img/fleche.jpg" id="fleche" alt="">
-		<img src="img/floche.jpg" id="floche" alt="">
-	</div>
+	<head>
+		<meta charset="UTF-8">
+		<title>Webagency</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="swiper.min.css">
+	</head>
+	<body>
+		<header>
+			<img src="img/logo.png" id="logo" alt="">
+			<ul id="menu_horizontal">
+				<li><a href="accueil.php">Accueil</a></li>
+				<li><a href="services.php">Service</a></li>
+				<li><a href="portfolio.php">Portfolio</a></li>
+				<li><a href="contact.php">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="diapo">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="img/bebe.jpg" class="image-swiper" alt=""></div>
+					<div class="swiper-slide"><img src="img/doudou.jpg" class="image-swiper" alt=""></div>
+					<div class="swiper-slide"><img src="img/grimace.jpg" class="image-swiper" alt=""></div>
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<!-- Add Pagination -->
+		  		<div class="swiper-pagination"></div>
+			</div>
+		</div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+																						
+		<!-- Swiper JS -->
+		<script src="swiper.min.js"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', 
+			{
+					
+				navigation: 
+				{
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				pagination: 
+				{
+					el: '.swiper-pagination',
+				},
+			});
+		</script>
+
+	</body>
 </html>
