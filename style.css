@@ -19,7 +19,7 @@ html, body
 
 body 
 	{
-		background: #eee;
+		background: #fff;
 		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 		font-size: 14px;
 		color:#000;
@@ -31,6 +31,11 @@ header
 	{ 
 		background-color: white; 
 		height:100px; 
+	}
+
+#logo
+	{
+		top:20px;
 	}
 
 
@@ -111,11 +116,11 @@ div.txt
 
 div>h2
 	{
-		margin-top:25px;
 		font-size:45px;
 		font-family:Marker felt;
 		text-align:center;
 		font-family: 'Caesar Dressing', cursive;
+		background:white;
 	}
 
 .lignepoint
@@ -139,6 +144,8 @@ div.services
 div.services h2
 	{
 		color:#00a3c4;
+		background:white;
+
 	}
 
 .article
@@ -154,6 +161,11 @@ div.services h2
 .icontxt
 	{
 		margin:20px 10px;
+	}
+
+.icontxt p
+	{
+		color:gray;
 	}
 
 @media screen and (max-width: 1024px)
@@ -232,11 +244,21 @@ nav ul li a {
 .navbar-toggle {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   width: 68px;
   height: 45px;
   z-index: 20;
   cursor: pointer;
+  float:left;
+
+}
+
+@media (max-width: 991px)
+{
+	.navbar-toggle 
+	{
+	    display: block;  
+	}
 }
 
 .bar1,
