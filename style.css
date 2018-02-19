@@ -33,11 +33,6 @@ header
 		height:100px; 
 	}
 
-#logo
-	{
-		float:left;
-		margin-left:30px;
-	}
 
 #menu_horizontal
 	{
@@ -50,6 +45,7 @@ ul#menu_horizontal li
 	{ 
 		display : inline;
 		padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+		font-size: 20px;
 	}
 
 ul#menu_horizontal 
@@ -100,7 +96,7 @@ ul#menu_horizontal li a
 .image-swiper
 	{
 		width: 100%;
-		height: 100%;
+		height: auto;
 		position:relative;
 	}
 
@@ -132,7 +128,6 @@ div>h2
 p
 	{
 		position:relative;
-		margin-top:50px;
 		color:gray;
 		text-align: center;
 	}
@@ -140,12 +135,19 @@ p
 .pc
 	{
 		position:relative;
-		margin-left:150px;
+		margin-left:130px;
 		width:450px;
 		height:450px;
 	}
 
 div.services
 	{
-		height: 200px;
+		height: 666px;
+		background:white;
+	}
+
+.limg1
+	{
+		float:right;
+		margin-top:30px;
 	}
