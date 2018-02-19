@@ -61,7 +61,6 @@ ul#menu_horizontal li a
 .diapo
 	{
 		margin:auto;
-		height:424px;
 		border-top: 6px solid black;
 		border-bottom: 6px solid black;
 		position:relative;
@@ -125,29 +124,24 @@ div>h2
 		margin-left: calc(50% - 77.5px);
 	}
 
-p
+#p1
 	{
 		position:relative;
 		color:gray;
 		text-align: center;
 	}
 
-.pc
-	{
-		position:relative;
-		margin-left:130px;
-		width:450px;
-		height:450px;
-	}
-
 div.services
 	{
-		height: 666px;
 		background:white;
 	}
 
-.limg1
+.article
 	{
-		float:right;
-		margin-top:30px;
+		margin-top:55px;
+	}
+
+.pc
+	{
+		margin: auto;
 	}
